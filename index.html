@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>2nd Project - freecodecamp - HTML and CSS</title>
+ <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+ <main class="back">
+  <header>
+   <h1 id="title">The world's favorite dog breed</h1>
+   <p id="description">A short survey about dogs</p>
+  </header>
+
+  <!-- foreground -->
+   <div class="fore">
+    <form id="survey-form" action="">
+
+      <!-- INITIAL INFORMATION -->
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+      <label for="email" id="email-label">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
+      <label for="number" id="number-label">Age (optional)</label>
+      <input type="number" name="age" id="number" min="18" max="99" placeholder="Enter your age">
+
+      <!-- DROP ELEMENT -->
+      <label for="" id="own">Do you currently own a dog?</label>
+
+      <select name="" id="dropdown">
+
+        <option value="" class="in" disabled selected >Select an option</option>
+        <option value="Yes">Yes, I do</option>
+        <option value="love" >I'd love to</option>
+        <option value="wish">I wish :(</option>
+      </select>
+      
+    
+
+      <!-- RADIO BUTTONS -->
+<fieldset class="opt">  
+
+  <legend>Have you ever had a dog before?</legend>
+  <input type="radio" name="had" id="one" value="yes">
+  <label for="one">Of course</label>
+<br><br>
+  <input type="radio" name="had" id="two" value="no">
+  <label for="two">Sadly no</label>
+
+</fieldset>
+
+<!-- checkbox -->
+
+<fieldset class="opt2">
+
+  <legend>What's your favorite dog breed? (you can select more than one)</legend>
+
+  <input type="checkbox" name="had" id="one" value="1">
+  <label for="one">French poodle</label>
+  <br><br>
+    <input type="checkbox" name="had" id="two" value="2">
+    <label for="two">Labrador</label>
+    <br><br>
+      <input type="checkbox" name="had" id="tre" value="3">
+      <label for="tre">Golden Retriever</label>
+      <br><br>
+
+</fieldset>
+
+
+<!-- TEXT AREA -->
+
+<label for="textarea" id="txt">Anything to say? Leave a comment</label>
+<br>
+<textarea name="" id="textarea" cols="30" rows="5"></textarea>
+
+<!-- SUBMIT BUTTON -->
+
+<button id=submit type="submit">Submit form</button>
+
+    </form>
+
+
+
+   </div>
+ </main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
